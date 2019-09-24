@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>짱구야 노오올자아ㅏ</title>
+	<style type="text/css">
+		#back2{height:1080px; width:1920px; margin:0px; opacity: 0;}
+		#back1{ height:1080px; width:1920px; margin:0px; opacity: 1;}
+
+		#section1 { position: absolute; z-index: 100 }
+		#section2 { position: absolute; z-index: 1 }
+		#man{height: 900px; position: absolute; top: 150px; left: 500px;}
+
+
+		#ant1{position: absolute; top: 850px; right:100px; width:100px; animation: ntaa 6s infinite linear alternate;}
+		@keyframes ntaa { from { right: 200px; }
+						to {right: 1700px;}}
+		#ant2{position: absolute; top: 750px; left:500px; width:70px; animation: nta 18s infinite linear alternate;}
+		@keyframes nta { from { left: 200px; }
+						to {left: 1500px;}}
+		#ant3{position: absolute; top: 700px; left:300px; width:100px; animation: nta 3s infinite linear alternate;}
+		@keyframes nta { from { left: 100px; }
+						to {left: 1700px;}}
+		#ant4{position: absolute; top: 800px; right:100px; width:80px; animation: ntaa 5s infinite linear alternate;}
+		@keyframes ntaa { from { right: 300px; }
+						to {right: 1000px;}}
+
+		#fly-ant5{position: absolute; top: 650px; left:1000px; width:150px; animation: ntb 18s infinite linear alternate;}
+		@keyframes ntb { from { top: 650px; }
+						to {top: 0px;}}
+		#fly-ant6{position: absolute; top: 400px; left:1500px; width:250px; animation: ntb 10s infinite linear alternate;}
+		@keyframes ntb { from { top: 400px; }
+						to {top: 50px;}}
+		#fly-ant7{position: absolute; top: 580px; left:150px; width:300px; animation: ntb 7s infinite linear alternate;}
+		@keyframes ntb { from { top: 550px; }
+						to {top: 0px;}}
+		#fly-ant8{position: absolute; top: 500px; left:700px; width:200px; animation: ntb 3s infinite linear alternate;}
+		@keyframes ntb { from { top: 550px; }
+						to {top: 50px;}}
+
+		
+
+
+	</style>
+</head>
+<body>
+	<div id="mybody">
+		<div id="section1">
+		<img src="action.png" id="man">
+		<audio controls id="zzanggu" autoplay>
+        <source src="zzanggu.mp3" type="audio/mpeg">
+    </audio>
+    	<img src="back1.jpg" id="back1">
+ 		</div>
+
+ 	<div id="section2">
+	
+     <img src="back2.jpg" id="back2">
+	
+	<img src="fly-ant8.png" id="fly-ant8">
+	<img src="fly-ant7.png" id="fly-ant7">
+	<img src="fly-ant6.png" id="fly-ant6">
+	<img src="fly-ant5.png" id="fly-ant5">
+	<img src="ant2.png" id="ant2">
+	<img src="ant3.png" id="ant3">
+	<img src="ant4.png" id="ant4">
+	<img src="ant1.png" id="ant1">
+	
+	
+	
+
+	
+		</div>
+	</div>
+	
+	<audio loop id="antsong">
+        <source src="cantsong.mp3" type="audio/mpeg">
+	</audio>
+
+		<script type="text/javascript">
+		man.onclick = function(){
+		back1.style.opacity="0";
+		man.style.opacity="0";
+		back2.style.background="url('back2.jpg')";
+		back2.style.opacity="1";
+		antsong.play();
+		}
+		
+	</script>
+</body>
+</html>
